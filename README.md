@@ -38,7 +38,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Clone the repository:
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/GradyKirkpatrickWebsite.git
+git clone https://github.com/gradykirkpatrick/my-website.git
 
 Open index.html in a browser.
 
