@@ -1,3 +1,7 @@
+User-agent: Bingbot
+Allow: /
+
 User-agent: *
 Disallow: 
+
 Sitemap: https://gradykirkpatrick.com/sitemap.xml
