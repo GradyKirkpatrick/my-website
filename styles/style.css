@@ -56,9 +56,24 @@ footer {
     position: relative;
 }
 
-.social-media {
+footer p {
+    margin: 0;
     position: absolute;
-    right: 10px; /* Move the image 10px to the left */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-media {
+    display: flex;
+    margin-left: auto; /* Align to the right */
+}
+
+.social-media a {
+    margin-left: 10px; /* Add margin between social media icons */
+}
+
+.social-media a:first-child {
+    margin-left: 0; /* Remove margin from the first icon */
 }
 
 .social-media img {
@@ -84,11 +99,18 @@ footer a:hover {
         padding: 1rem;
     }
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer p {
+        position: static;
+        transform: none;
+        margin-left: 0; /* Move text to the left */
     }
     .social-media {
-        position: static;
-        margin-top: 1rem;
+        margin-top: 0; /* Remove top margin */
+        justify-content: flex-end; /* Align icons to the right */
+        margin-right: 10px; /* Add margin to the right */
     }
 }
 
@@ -102,8 +124,15 @@ footer a:hover {
     footer {
         padding: 0.5rem;
     }
+    footer p {
+        margin-left: 0; /* Move text all the way to the left */
+    }
     .social-media img {
         width: 25px; /* Adjust the width as needed */
         height: 25px; /* Adjust the height as needed */
+    }
+    .social-media {
+        justify-content: flex-end; /* Align icons to the right */
+        margin-right: 10px; /* Add margin to the right */
     }
 }
