@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>Grady Kirkpatrick | Personal Website</title>
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-        <link rel="canonical" href="https://gradykirkpatrick.com">
-    
-        <link rel="icon" href="gk.ico">
-    
-        <!-- Structured Data for Google -->
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Grady Kirkpatrick",
-              "alternateName": "Grady Kirkpatrick | Personal Website",
-              "url": "https://gradykirkpatrick.com"
-            }
-        </script>
-    
-        <meta name="description" content="Welcome to the official website of Grady Kirkpatrick, where you can explore my projects, connect with me, and learn more about my interests.">
-        <meta name="keywords" content="Grady Kirkpatrick, personal website, Grady Kirkpatrick contact, professional portfolio, projects by Grady Kirkpatrick, Grady Kirkpatrick email, Grady Kirkpatrick social media, about Grady Kirkpatrick, connect with Grady Kirkpatrick">
-    
-        <!-- Open Graph Meta Tags for Social Media and SEO -->
-        <meta property="og:title" content="Grady Kirkpatrick | Personal Website">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://gradykirkpatrick.com">
-        <meta property="og:image" content="https://gradykirkpatrick.com/images/grady-kirkpatrick.jpg">
-        <meta property="og:description" content="Welcome to the official website of Grady Kirkpatrick, where you can explore my projects, connect with me, and learn more about my interests.">
-        <meta property="og:site_name" content="Grady Kirkpatrick">
-    
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Grady Kirkpatrick | Personal Website">
-        <meta name="twitter:description" content="Welcome to the official website of Grady Kirkpatrick, where you can explore my projects, connect with me, and learn more about my interests.">
-        <meta name="twitter:image" content="https://gradykirkpatrick.com/images/grady-kirkpatrick.jpg">
-    
-        <meta name="theme-color" content="#000000">
-        <meta name="application-name" content="Grady Kirkpatrick">
-        <meta name="generator" content="custom">
-    
-        <link rel="stylesheet" href="/styles/style.css">
-    </head>    
-<body>
-    <header>
-        <h1>GK</h1>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grady Kirkpatrick | Portfolio</title>
+    <meta name="description" content="Welcome to Grady Kirkpatrick's portfolio, a place to connect and explore.">
+    <link rel="icon" href="gk.ico">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-inter">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-800 bg-opacity-90">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <a href="/" class="text-2xl font-bold">GK</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-gray-300">Home</a>
+                    <a href="#contact" class="hover:text-gray-300">Contact</a>
+                </div>
+                <button id="menu-toggle" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#home" class="block px-3 py-2 hover:text-gray-300">Home</a>
+            <a href="#contact" class="block px-3 py-2 hover:text-gray-300">Contact</a>
+        </div>
+    </nav>
 
-    <main>
-        <section id="welcome"> 
-            <h2>Welcome to my personal website!</h2>
-        </section>
-        <img src="/images/gk-main (Custom).jpg" alt="Image of a River." class="main-image">
-        <section id="contact">
-            <h3>Contact Me</h3>
-            <p>Email me at: <a href="mailto:contact@gradykirkpatrick.com">contact@gradykirkpatrick.com</a></p>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-black to-gray-800">
+        <div class="text-center px-4">
+            <h1 class="text-5xl font-bold mb-4">Grady Kirkpatrick</h1>
+            <p class="text-xl mb-6">Innovator | Creative Mind</p>
+            <a href="#contact" class="bg-gray-600 text-white px-6 py-3 rounded-full hover:bg-gray-500">Get in Touch</a>
+        </div>
+    </section>
 
-    <footer>
-        <p>Copyright &copy; 2025 Grady Kirkpatrick. All rights reserved.</p>
-        <div class="social-media">
-            <a href="https://x.com/gradyekirk">
-                <img src="/images/x-logo-white.png" alt="Social Media">
-            </a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="text-lg mb-4">Let's talk about ideas or opportunities!</p>
+                <p class="text-lg mb-4">Email: <a href="mailto:info@gradykirkpatrick.com" class="text-gray-300 hover:text-white">info@gradykirkpatrick.com</a></p>
+                <a href="https://x.com/gradyekirk" class="inline-block">
+                    <img src="/images/x-logo-white.png" alt="X Social Media" class="w-8 h-8">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-sm">Copyright © 2025 Grady Kirkpatrick. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript for Menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
