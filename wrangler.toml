@@ -1,5 +1,6 @@
+name = "my-website"
 compatibility_date = "2025-12-31"
 
 [assets]
 directory = "."
-not_found_handling = "single-page-application"  # optional, for clean URLs / fallback to index.html
+not_found_handling = "single-page-application"  # add this for clean URLs / index.html fallback on 404s
